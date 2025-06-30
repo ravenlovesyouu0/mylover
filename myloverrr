@@ -14,7 +14,7 @@
     }
 
     body {
-      background-image: url('https://media.tenor.com/YME8mU0UojAAAAAd/goku-chichi-dragon-ball.gif');
+      background-image: background-image: url('https://media.tenor.com/YME8mU0UojAAAAAd/goku-chichi-dragon-ball.gif');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
