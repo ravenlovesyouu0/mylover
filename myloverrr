@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>For Goku 💜</title>
+  <title>For My Goku 💜</title>
   <style>
     html, body {
       margin: 0;
@@ -25,7 +25,6 @@
       color: orange;
     }
 
-    /* Purple overlay */
     body::before {
       content: "";
       position: fixed;
@@ -67,15 +66,8 @@
     .main-box img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       display: block;
-    }
-
-    .spotify-embed {
-      margin-top: 30px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
 
     .buttons {
@@ -99,6 +91,13 @@
       transform: scale(1.05);
       background-color: #ffb347;
     }
+
+    .spotify-embed {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
   </style>
 </head>
 <body>
@@ -106,27 +105,23 @@
     <h1>will u be my boyfriend?</h1>
 
     <div class="main-box">
-      <img src="https://media.tenor.com/yUOavw57UpgAAAAC/care-clean.gif" alt="Care Clean GIF" />
+      <img src="https://i.imgur.com/y8rbpPo.jpeg" alt="Main Image" />
     </div>
 
     <h2>I love you my Goku! &lt;3</h2>
 
     <div class="buttons">
-      <button onclick="alert('Yay!!! 💖')">yes!!</button>
+      <button onclick="alert('Yay!!! 💖💖💖')">yes!!</button>
       <button onclick="alert('okay... I’ll wait for you 💌')">maybe later</button>
     </div>
 
     <div class="spotify-embed">
-      <iframe style="border-radius:12px" 
-        src="https://open.spotify.com/embed/track/6Av5f1cIcc219azI4uGZb5?utm_source=generator&theme=0" 
-        width="300" height="80" frameborder="0" allowfullscreen="" 
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/0vW8nRf9ILvlzBRJtQGldu?utm_source=generator"
+        width="300" height="80" frameborder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
       </iframe>
     </div>
   </div>
 </body>
 </html>
-Tenor
-Kitsune Upload Anime GIF - Tenor GIF Keyboard - Bring Personality T...
-Kitsune Upload Anime GIF - Tenor GIF Keyboard - Bring Personality To Your Conversations | Say more with Tenor
-﻿
