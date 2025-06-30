@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>For My husband</title>
+  <title>For My husband 💞</title>
   <style>
     html, body {
       margin: 0;
@@ -11,33 +11,31 @@
       height: 100%;
       width: 100%;
       font-family: 'Arial', sans-serif;
+      background-color: #000;
     }
 
     body {
-      background-image: url('https://media.tenor.com/YME8mU0UojAAAAAd/goku-chichi-dragon-ball.gif');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       color: orange;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
 
     body::before {
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(128, 0, 128, 0.4);
+      background-color: rgba(128, 0, 128, 0.5); /* Purple overlay */
       z-index: 0;
     }
 
     .content {
       position: relative;
       z-index: 1;
-      text-align: center;
       padding: 20px;
     }
 
@@ -76,26 +74,40 @@
       background-color: #ffb347;
     }
 
-    .spotify-embed {
-      margin-top: 30px;
+    .gif-embed, .spotify-embed {
+      margin-top: 20px;
       z-index: 1;
+    }
+
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
   <div class="content">
     <h1>will u be my boyfriend, jamari?</h1>
-    <h2>I love you mi marido! &lt;3</h2>
+    <h2>I love you my Goku! &lt;3</h2>
+
+    <div class="gif-embed">
+      <!-- Tenor GIF Embed -->
+      <div class="tenor-gif-embed" data-postid="27288353" data-share-method="host" data-aspect-ratio="1.3278" data-width="100%">
+        <a href="https://tenor.com/view/goku-chichi-dragon-ball-kid-goku-flying-nimbus-gif-27288353">Goku Chichi GIF</a> from 
+        <a href="https://tenor.com/search/goku-gifs">Goku GIFs</a>
+      </div> 
+      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
 
     <div class="buttons">
-      <button onclick="alert('YAAAY JAMARI 💖')">yes!!</button>
+      <button onclick="alert('YAAAY JAMARI<3💖💖')">yes!!</button>
       <button onclick="alert('dw hun I’ll wait for you! 💌')">maybe later</button>
     </div>
 
     <div class="spotify-embed">
-      <iframe style="border-radius:12px"
-        src="https://open.spotify.com/embed/track/6zVFRTb0pVV7bAr4nxo7ul?utm_source=generator"
-        width="300" height="80" frameborder="0" allowfullscreen=""
+      <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/6Sb49DdwbBrVEEtG8OGpGT?utm_source=generator" 
+        width="300" height="80" frameborder="0" allowfullscreen 
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
       </iframe>
     </div>
