@@ -1,91 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dragon Ball Love Card 💖</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: linear-gradient(to bottom, #000, #ff9900);
-      color: white;
-      text-align: center;
-      overflow: hidden;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love Message</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  body {
+    position: relative;
+    background-image: url('https://media1.tenor.com/m/ySRea4IQVuwAAAAC/kitsune-upload-anime.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+  }
 
-    h1 {
-      margin-top: 40px;
-      font-size: 2.5em;
-    }
+  /* Purple overlay to tint background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(128, 0, 128, 0.6); /* purple with 60% opacity */
+    z-index: 0;
+  }
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
+  /* Container to keep text and gif above overlay */
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
 
-    .card {
-      margin-top: 40px;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 20px;
-      width: 80%;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 0 15px gold;
-    }
+  h1, h2 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  }
 
-    .buttons {
-      margin-top: 20px;
-    }
+  h1 {
+    font-size: 2.5rem;
+    text-transform: lowercase;
+  }
 
-    .btn {
-      background-color: orange;
-      color: black;
-      border: none;
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 1.2em;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
+  h2 {
+    font-size: 1.8rem;
+  }
 
-    .btn:hover {
-      transform: scale(1.1);
-      background-color: gold;
-    }
+  .main-box {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 
-    .goku {
-      max-width: 250px;
-      margin-top: 20px;
-    }
-
-    .floating {
-      position: fixed;
-      width: 50px;
-      animation: float 6s infinite ease-in-out;
-      opacity: 0.8;
-    }
-
-    .ball1 { top: 5%; left: 10%; animation-delay: 0s; }
-    .ball2 { top: 15%; left: 80%; animation-delay: 2s; }
-    .ball3 { top: 60%; left: 20%; animation-delay: 4s; }
-    .ball4 { top: 70%; left: 70%; animation-delay: 1s; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-    }
-  </style>
+  .main-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+</style>
 </head>
 <body>
-  <div class="card">
-    <h1>You’ve collected all 7 Dragon Balls! 🟠</h1>
-    <p>Now you get one wish…<br>
-    Wanna be my lover?? 🎮💛</p>
-    <img class="goku" src="https://media.tenor.com/2JKreWj9lnEAAAAC/goku-smile.gif" alt="Goku Smiling" />
+  <div class="content">
+    <h1>will u be my boyfriend?</h1>
+    <div class="main-box">
+      <img src="https://media.tenor.com/images/3f0134c8a1b9d9f97d3c368f9b7e271b/tenor.gif" alt="Care Clean GIF" />
+    </div>
+    <h2>I love you my Goku! &lt;3</h2>
+  </div>
+</body>
+</html>
     <div class="buttons">
       <button class="btn" onclick="respond('yes')">Yes!!</button>
       <button class="btn" onclick="respond('heckyes')">HECK YES!!</button>
