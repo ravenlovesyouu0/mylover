@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dragon Ball Love Card</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Comic Sans MS', cursive;
-      background-color: #000;
-      color: #FFA500;
-      text-align: center;
-      padding-top: 60px;
-      background-image: url('https://wallpaperaccess.com/full/139617.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px #000;
-    }
-    p {
-      font-size: 1.5em;
-      margin-bottom: 40px;
-      text-shadow: 1px 1px #000;
-    }
-    button {
-      background-color: #FFA500;
-      color: black;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border: none;
-      border-radius: 10px;
-      margin: 10px;
-      cursor: pointer;
-      box-shadow: 0 5px #333;
-      transition: transform 0.2s;
-    }
-    button:hover {
-      transform: scale(1.05);
-    }
-    img {
-      width: 300px;
-      border-radius: 20px;
-      margin-top: 20px;
-      box-shadow: 0 0 30px orange;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love Message</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  body {
+    position: relative;
+    background-image: url('https://media1.tenor.com/m/ySRea4IQVuwAAAAC/kitsune-upload-anime.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+  }
+
+  /* Purple overlay to tint background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(128, 0, 128, 0.6); /* purple with 60% opacity */
+    z-index: 0;
+  }
+
+  /* Container to keep text and gif above overlay */
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  h1, h2 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-transform: lowercase;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .main-box {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .main-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+</style>
 </head>
 <body>
-  <h1>Will you be my Super Saiyan 💛 on July 4th?</h1>
-  <p>i love u my Goku! .</p>
-  <img src="https://media.tenor.com/2roX3uxz_68AAAAC/goku-smile.gif" alt="Goku smiling">
-  <div>
-    <button onclick="alert('YAY! Let’s make this the best episode yet!! ')">Yes!!</button>
-    <button onclick="alert('I’ll train harder and ask again ?')">Maybe later?</button>
+  <div class="content">
+    <h1>will u be my boyfriend?</h1>
+    <div class="main-box">
+      <img src="https://media.tenor.com/images/3f0134c8a1b9d9f97d3c368f9b7e271b/tenor.gif" alt="Care Clean GIF" />
+    </div>
+    <h2>I love you my Goku! &lt;3</h2>
   </div>
 </body>
-</html>
+</h
