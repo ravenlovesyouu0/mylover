@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>For My Goku 💜</title>
+  <title>For My love</title>
   <style>
     html, body {
       margin: 0;
@@ -111,8 +111,8 @@
     <h2>I love you my Goku! &lt;3</h2>
 
     <div class="buttons">
-      <button onclick="alert('Yay!!! 💖💖💖')">yes!!</button>
-      <button onclick="alert('okay... I’ll wait for you 💌')">maybe later</button>
+      <button onclick="alert('Yay!!! 💖')">yes!!</button>
+      <button onclick="alert('dw baby I’ll wait for you 💌')">maybe later</button>
     </div>
 
     <div class="spotify-embed">
