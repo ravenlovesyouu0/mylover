@@ -112,7 +112,7 @@
     <h2>I love you my Goku! &lt;3</h2>
 
     <div class="buttons">
-      <button onclick="alert('Yay!!! 💖💖💖')">yes!!</button>
+      <button onclick="alert('Yay!!! 💖')">yes!!</button>
       <button onclick="alert('okay... I’ll wait for you 💌')">maybe later</button>
     </div>
 
