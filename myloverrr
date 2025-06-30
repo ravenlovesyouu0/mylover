@@ -1,91 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Love Message</title>
-<style>
-  html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-  }
-  body {
-    position: relative;
-    background-image: url('https://media1.tenor.com/m/ySRea4IQVuwAAAAC/kitsune-upload-anime.gif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: orange;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For Goku 💜</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      font-family: 'Arial', sans-serif;
+    }
 
-  /* Purple overlay to tint background */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(128, 0, 128, 0.6); /* purple with 60% opacity */
-    z-index: 0;
-  }
+    body {
+      position: relative;
+      background-image: url('https://media1.tenor.com/m/ySRea4IQVuwAAAAC/kitsune-upload-anime.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: orange;
+    }
 
-  /* Container to keep text and gif above overlay */
-  .content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-  }
+    /* Purple overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(128, 0, 128, 0.5);
+      z-index: 0;
+    }
 
-  h1, h2 {
-    margin: 10px 0;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-  }
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
 
-  h1 {
-    font-size: 2.5rem;
-    text-transform: lowercase;
-  }
+    h1, h2 {
+      margin: 10px 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
 
-  h2 {
-    font-size: 1.8rem;
-  }
+    h1 {
+      font-size: 2.5rem;
+      text-transform: lowercase;
+    }
 
-  .main-box {
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
-    background-color: rgba(255, 255, 255, 0.8);
-  }
+    h2 {
+      font-size: 1.8rem;
+    }
 
-  .main-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-  }
-</style>
+    .main-box {
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .main-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .spotify-embed {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      background-color: orange;
+      color: purple;
+      border: none;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .buttons button:hover {
+      transform: scale(1.05);
+      background-color: #ffb347;
+    }
+  </style>
 </head>
 <body>
   <div class="content">
     <h1>will u be my boyfriend?</h1>
+
     <div class="main-box">
-      <img src="https://media.tenor.com/images/3f0134c8a1b9d9f97d3c368f9b7e271b/tenor.gif" alt="Care Clean GIF" />
+      <img src="https://media.tenor.com/yUOavw57UpgAAAAC/care-clean.gif" alt="Care Clean GIF" />
     </div>
+
     <h2>I love you my Goku! &lt;3</h2>
+
+    <div class="buttons">
+      <button onclick="alert('Yay!!! 💖💖💖')">yes!!</button>
+      <button onclick="alert('okay... I’ll wait for you 💌')">maybe later</button>
+    </div>
+
+    <div class="spotify-embed">
+      <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/6Av5f1cIcc219azI4uGZb5?utm_source=generator&theme=0" 
+        width="300" height="80" frameborder="0" allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+      </iframe>
+    </div>
   </div>
 </body>
 </html>
-    <div class="buttons">
-      <button class="btn" onclick="respond('yes')">Yes!!</button>
-      <button class="btn" onclick="respond('heckyes')">HECK YES!!</button>
-    </div>
-  </div>
-
-  <img src="https://
+Tenor
+Kitsune Upload Anime GIF - Tenor GIF Keyboard - Bring Personality T...
+Kitsune Upload Anime GIF - Tenor GIF Keyboard - Bring Personality To Your Conversations | Say more with Tenor
+﻿
